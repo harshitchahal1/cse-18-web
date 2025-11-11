@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding:0;
+    /* background-color: aqua;
+    background-image: url(serene-samurai-amidst-cherry-blossoms-moonlit-lake.jpg);
+    background-repeat: y;
+    background-position:top right;
+    background-size: cover; */
+    background: url(serene-samurai-amidst-cherry-blossoms-moonlit-lake.jpg) no-repeat top right #999;
+}
+h1{
+    background-color: aquamarine;
+}
+html,
+* {
+    margin:0;
+    padding:0;
+
+}
