@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html, *{
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: aqua;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav, header,article, footer{
+            background-color: rgb(255, 240, 251); height: 140px; text-align: center; line-height: 140px;
+        }
+        section{
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .box{
+            flex-grow: 1;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 300px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav><h2>Navigation</h2></nav>
+        <header><h2>Header</h2></header>
+        <article><h2>Inter Text Area</h2></article>
+        <section>
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </section>
+        <Footer>Footer</Footer>
+    </main>
+    
+</body>
+</html>
