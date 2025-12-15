@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    html,*{
+        margin: 0;
+        padding: 0;
+        
+    }
+    main{
+        width: 1200px;
+        height: auto;
+        background-color: #999;
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+    }
+    nav, header,article,footer{
+            background-color: #ccc; height: 140px; text-align: center; line-height: 140px;
+        }
+    section{
+         height: 300px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+    } 
+    .box{
+            flex-grow: 1;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 300px;
+        }
+        @media screen and (max-width:460px){
+            main{
+                background-color:brown;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+            }
+            
+        }
+        @media screen and (max-width:500px){
+            .box{
+                background-color: greenyellow;
+            }
+        
+        }
+</style>
+<body> <main>
+   <nav><h1>Logo</h1></nav>
+   <header><h1>Header</h1></header>
+   <article><h1>TextArea</h1></article>
+   <section>
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+   </section>
+   <footer><h1>Footer</h1></footer>
+</body>
+</html>
